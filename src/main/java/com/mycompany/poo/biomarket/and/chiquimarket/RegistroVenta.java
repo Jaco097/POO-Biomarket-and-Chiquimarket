@@ -4,21 +4,32 @@
  */
 package com.mycompany.poo.biomarket.and.chiquimarket;
 
+import java.util.*;
+import java.io.Serializable;
 /**
  *
  * @author jacob
  */
-public class RegistroVenta {
+public class RegistroVenta implements Serializable {
     private int IDr;
     private int cantidadRe;
     private double precioUnitario;
     private double totalV;
 
-    public RegistroVenta(int Ir, int canRe, double preUnio, double toV) {
-        this.IDr = Ir;
-        this.cantidadRe = canRe;
-        this.precioUnitario = preUnio;
-        this.totalV = toV;
+    
+
+    public void leer()
+    {
+        Scanner a=new Scanner(System.in);
+        System.out.println("Ingrese ID Registro de la venta");
+        IDr=a.nextInt();
+        System.out.println("Ingrese Cantidad de Ventas");
+        cantidadRe=a.nextInt();
+        System.out.println("Ingrese Precio Unitario del producto");
+        precioUnitario=a.nextDouble();
+        System.out.println("Igrese el total de la Ventas");
+        totalV=a.nextDouble();
+
     }
     public void mostrarRegistro()
     {
