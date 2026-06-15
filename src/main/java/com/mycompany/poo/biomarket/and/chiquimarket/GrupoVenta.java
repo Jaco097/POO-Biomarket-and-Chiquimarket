@@ -1,13 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.poo.biomarket.and.chiquimarket;
 
-/**
- *
- * @author jacob
- */
+
 public class GrupoVenta {
-    
+    private String nombreGV;
+    private Estudiante e[]=new Estudiante[10];
+    private Docente d=new Docente();
+    private String nomFacultad;
+    private String nomCarrera;
 }

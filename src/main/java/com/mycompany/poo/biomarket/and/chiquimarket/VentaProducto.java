@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.poo.biomarket.and.chiquimarket;
 
 /**
@@ -9,5 +6,8 @@ package com.mycompany.poo.biomarket.and.chiquimarket;
  * @author jacob
  */
 public class VentaProducto {
-    
+    private int IDv;
+    private int cantidad;
+    private int PrecioUnitario;
+    private int subtotal;
 }
