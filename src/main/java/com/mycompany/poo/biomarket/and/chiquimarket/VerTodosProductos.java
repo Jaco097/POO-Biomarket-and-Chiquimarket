@@ -13,9 +13,17 @@ public class VerTodosProductos extends javax.swing.JPanel {
     /**
      * Creates new form VerTodosProductos
      */
-    public VerTodosProductos() {
+    
+    
+    public VerTodosProductos(String a) {
         initComponents();
+       //this.tienda=new Tienda();
+        //this.jTextArea2.setText();
+        textArea1.setText(a);
     }
+    
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

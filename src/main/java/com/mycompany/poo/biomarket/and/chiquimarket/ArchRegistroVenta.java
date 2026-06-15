@@ -71,6 +71,10 @@ public class ArchRegistroVenta {
             archi.close();
         }
     }
+    
+    public void Listado(){
+        
+    }
 }
 
     

@@ -111,5 +111,37 @@ public class ArchiProducto {
     }
 }
     
+ public String listadoString() {
+    String texto = "";
+
+    try {
+        ObjectInputStream Miarch =
+                new ObjectInputStream(new FileInputStream(nom));
+
+        while (true) {
+            Producto x = (Producto) Miarch.readObject();
+
+            texto += "ID: " + x.getIDp()
+                  + " Nombre: " + x.getNombreP()
+                  + " Precio: " + x.getPrecio()
+                  + " Cantidad: " + x.getCantidad()
+                  + " Tipo: " + x.getTipo()
+                  
+                  + "\n";
+        }
+
+    } catch (EOFException e) {
+        // Fin normal
+    } catch (Exception e) {
+        System.out.println(e.getMessage());
+    }
+
+    return texto;
+}
+ 
+ 
+ 
+}
     
-}   
+    
+

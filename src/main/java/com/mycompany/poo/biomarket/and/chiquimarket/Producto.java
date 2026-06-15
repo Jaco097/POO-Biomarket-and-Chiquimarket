@@ -36,6 +36,8 @@ public class Producto implements Serializable {
         System.out.println("Tipo: " + tipo);
         //  System.out.println("Facultad: " + Facultad)
     }
+    
+
 
     public String getNombreP() {
         return nombreP;

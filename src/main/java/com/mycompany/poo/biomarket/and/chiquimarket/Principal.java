@@ -11,8 +11,9 @@ import java.awt.BorderLayout;
  */
 public class Principal extends javax.swing.JFrame {
     
+    
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Principal.class.getName());
-
+    private String P;
    
     /**
      * Creates new form Principal
@@ -20,7 +21,12 @@ public class Principal extends javax.swing.JFrame {
     public Principal() {
         initComponents();
         jPanel3.setLayout(new BorderLayout());
-        CambiarPanel(new BuscarProducto()); 
+        CambiarPanel(new VerTodosProductos(P)); 
+        
+    }
+    
+    public void productos(String a){
+        this.P=a;
     }
     
     private void CambiarPanel(JPanel p) {
@@ -235,7 +241,8 @@ public class Principal extends javax.swing.JFrame {
 //boton ver todos los productos
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        CambiarPanel(new VerTodosProductos());
+        CambiarPanel(new VerTodosProductos(P));
+        
         
     }//GEN-LAST:event_jButton1ActionPerformed
 //boton ver producto x
