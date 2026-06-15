@@ -21,6 +21,7 @@ public class RegistroVenta implements Serializable {
     public void leer()
     {
         Scanner a=new Scanner(System.in);
+        System.out.println("==========================");
         System.out.println("Ingrese ID Registro de la venta");
         IDr=a.nextInt();
         System.out.println("Ingrese Cantidad de Ventas");
